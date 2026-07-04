@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Vim Dojo 🥋
 
-## Getting Started
+**Interactive drills that turn vim/neovim motions into muscle memory.**
 
-First, run the development server:
+Short, scored challenges in a real vim-emulated editor, right in the browser.
+Every drill has a **par** — the optimal keystroke count. Hit par for three
+stars, then come back and golf your best score down.
+
+## How it works
+
+- **12 modules, 61 drills** — a deliberate progression from `h j k l` to
+  text objects, counts, search, visual mode, and combined "gauntlet" fixes.
+- **Real vim emulation** — powered by [`@replit/codemirror-vim`](https://github.com/replit/codemirror-vim),
+  so what your fingers learn here transfers 1:1 to neovim.
+- **Two kinds of drills** — land the cursor on a highlighted target, or
+  transform the buffer to match a target. Validation is instant.
+- **Keystroke golf** — a live key counter, a keycast strip, par scores, and
+  the optimal "par play" revealed after every drill.
+- **Progress saved locally** — stars and best scores persist in
+  `localStorage`. No accounts, no backend.
+
+## Modules
+
+| # | Module | Teaches |
+|---|--------|---------|
+| 01 | First Steps | `h` `j` `k` `l` |
+| 02 | Word Warp | `w` `b` `e` `0` `$` |
+| 03 | Vertical Leap | `gg` `G` `{count}G` |
+| 04 | Sniper Mode | `f` `F` `t` `;` `,` |
+| 05 | Ways In | `i` `a` `I` `A` `o` `O` |
+| 06 | Quick Fixes | `x` `r` `~` `J` `u` |
+| 07 | Verbs + Motions | `d` `c` `y` `p` `dd` `yy` `D` |
+| 08 | Text Objects | `ciw` `daw` `di"` `ci(` `ci{` |
+| 09 | Multipliers | `3w` `3x` `d3w` `3dd` `3f;` |
+| 10 | Search & Destroy | `/` `n` `N` `*` |
+| 11 | Visual Mode | `v` `V` + operators |
+| 12 | The Gauntlet | everything, combined |
+
+Plus a free-play **playground** buffer and a **cheatsheet** of every key
+taught (and a few worth learning next).
+
+## Development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Built with Next.js (App Router), Tailwind CSS, CodeMirror 6, and
+`@replit/codemirror-vim`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## License
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT
