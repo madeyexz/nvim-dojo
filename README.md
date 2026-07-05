@@ -42,6 +42,19 @@ from browser drills to a real Neovim setup (install, `:Tutor`, a starter
 | 11 | Visual Mode | `v` `V` + operators |
 | 12 | The Gauntlet | everything, combined |
 
+## LazyVim workflow track
+
+A second set of drills runs in a **simulated LazyVim workspace** —
+bufferline, split windows, neo-tree-style explorer, fuzzy picker, terminal,
+and a live which-key popup — driven by LazyVim's actual default keymaps:
+
+| # | Module | Teaches |
+|---|--------|---------|
+| 01 | Buffer Surfing | `H` `L` `<leader>,` `` <leader>` `` `<leader>bd` `<leader>bo` |
+| 02 | File Finder | `<leader><space>` `<leader>ff` `<leader>fr` `<leader>/` |
+| 03 | Splits & Hops | `<C-h/j/k/l>` `<leader>\|` `<leader>-` `<leader>wd` |
+| 04 | Explorer & Terminal | `<leader>e` `j/k/Enter` `<C-/>` |
+
 Plus a free-play **playground** buffer, a **cheatsheet** of every key
 taught, and the **real nvim** setup guide.
 

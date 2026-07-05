@@ -1,4 +1,5 @@
 import Keycap from "@/components/Keycap";
+import { lvModules } from "@/lib/lazyvim";
 import { extraCheats, modules } from "@/lib/lessons";
 
 export const metadata = { title: "Cheatsheet" };
@@ -23,6 +24,24 @@ export default function CheatsheetPage() {
           >
             <h2 className="mb-3 font-mono text-sm font-bold text-green">
               {String(m.num).padStart(2, "0")}. {m.title}
+            </h2>
+            <ul className="flex flex-col gap-2">
+              {m.keys.map((k) => (
+                <li key={k.key} className="flex items-baseline gap-3 text-sm">
+                  <Keycap k={k.key} />
+                  <span className="text-dim">{k.desc}</span>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ))}
+        {lvModules.map((m) => (
+          <section
+            key={m.id}
+            className="rounded-xl border border-purple/30 bg-panel p-5"
+          >
+            <h2 className="mb-3 font-mono text-sm font-bold text-purple">
+              lazyvim · {m.title}
             </h2>
             <ul className="flex flex-col gap-2">
               {m.keys.map((k) => (

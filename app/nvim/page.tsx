@@ -180,6 +180,35 @@ vim.keymap.set("n", "<leader>w", "<cmd>write<CR>")   -- Space-w to save`}</Code>
           </ul>
         </Section>
 
+        <Section num="04.5" title="or just use LazyVim">
+          <p>
+            If you&apos;d rather start from a polished, batteries-included
+            setup,{" "}
+            <a
+              href="https://www.lazyvim.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-purple underline-offset-4 hover:underline"
+            >
+              LazyVim
+            </a>{" "}
+            is the most popular Neovim distribution — picker, explorer,
+            bufferline, LSP, and terminal all preconfigured behind{" "}
+            <Keycap k="SPC" /> (which-key shows you every option as you type).
+          </p>
+          <p>
+            The dojo has a dedicated{" "}
+            <Link
+              href="/#lazyvim"
+              className="text-purple underline-offset-4 hover:underline"
+            >
+              LazyVim workflow track
+            </Link>{" "}
+            that drills its file/buffer/split/panel navigation in a simulated
+            workspace — the exact keys, before you ever open the real thing.
+          </p>
+        </Section>
+
         <Section num="05" title="your first week">
           <ul className="flex list-disc flex-col gap-2 pl-5">
             <li>

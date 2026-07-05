@@ -1,7 +1,9 @@
 import Link from "next/link";
+import LazyVimGrid from "@/components/LazyVimGrid";
 import ModuleGrid from "@/components/ModuleGrid";
 import { KeycapRow } from "@/components/Keycap";
 import { modules, totalChallenges } from "@/lib/lessons";
+import { totalLvChallenges } from "@/lib/lazyvim";
 
 export default function Home() {
   return (
@@ -17,9 +19,9 @@ export default function Home() {
           install.
         </p>
         <div className="mt-6 flex items-center justify-center gap-2 font-mono text-sm text-faint">
-          <span>{modules.length} modules</span>
+          <span>{modules.length + 4} modules</span>
           <span>·</span>
-          <span>{totalChallenges} drills</span>
+          <span>{totalChallenges + totalLvChallenges} drills</span>
           <span>·</span>
           <span>par scores to golf</span>
         </div>
@@ -29,6 +31,12 @@ export default function Home() {
             className="rounded-lg bg-green px-6 py-3 font-mono text-sm font-semibold text-bg transition hover:brightness-110"
           >
             start training →
+          </Link>
+          <Link
+            href="#lazyvim"
+            className="rounded-lg border border-purple/50 px-6 py-3 font-mono text-sm text-purple transition hover:bg-purple/10"
+          >
+            I use LazyVim →
           </Link>
           <Link
             href="/playground"
@@ -53,6 +61,7 @@ export default function Home() {
         </p>
       </section>
       <ModuleGrid />
+      <LazyVimGrid />
     </>
   );
 }

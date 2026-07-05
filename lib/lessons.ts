@@ -394,7 +394,7 @@ export const modules: VimModule[] = [
         raw: "important note▶!",
         goalText: "> important note!",
         par: 3,
-        solution: ["I", ">", "␣", "Esc"],
+        solution: ["I", ">", "SPC", "Esc"],
       },
       {
         title: "Open below with o",
