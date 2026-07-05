@@ -8,11 +8,11 @@ export default function Home() {
     <>
       <section className="mx-auto max-w-6xl px-4 pb-16 pt-20 text-center">
         <h1 className="font-mono text-5xl font-bold tracking-tight text-fg sm:text-6xl">
-          vim<span className="text-green">dojo</span>
+          nvim<span className="text-green">dojo</span>
           <span className="cursor-blink text-green">▊</span>
         </h1>
         <p className="mx-auto mt-5 max-w-xl text-lg text-dim">
-          Stop pecking at arrow keys. Short, scored drills that burn vim
+          Stop pecking at arrow keys. Short, scored drills that burn Neovim
           motions into your fingers — right in the browser, nothing to
           install.
         </p>
@@ -44,6 +44,13 @@ export default function Home() {
             until you stop thinking about it
           </span>
         </div>
+        <p className="mx-auto mt-6 max-w-xl text-sm text-faint">
+          Everything drilled here is Neovim&apos;s core editing grammar — it
+          transfers keystroke-for-keystroke. When you&apos;re ready,{" "}
+          <Link href="/nvim" className="text-green underline-offset-4 hover:underline">
+            set up the real thing →
+          </Link>
+        </p>
       </section>
       <ModuleGrid />
     </>

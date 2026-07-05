@@ -1,4 +1,4 @@
-// Vim Dojo lesson data.
+// Nvim Dojo lesson data.
 //
 // Challenge text is authored with two markers that get stripped at parse time:
 //   ▶  where the cursor starts (defaults to offset 0 if absent)

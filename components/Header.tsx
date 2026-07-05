@@ -9,7 +9,7 @@ export default function Header() {
           href="/"
           className="font-mono text-sm font-bold text-green transition hover:brightness-110"
         >
-          ~/vim-dojo<span className="cursor-blink">▊</span>
+          ~/nvim-dojo<span className="cursor-blink">▊</span>
         </Link>
         <nav className="ml-auto flex items-center gap-5 font-mono text-sm">
           <Link href="/" className="text-dim transition hover:text-fg">
@@ -20,6 +20,9 @@ export default function Header() {
             className="text-dim transition hover:text-fg"
           >
             playground
+          </Link>
+          <Link href="/nvim" className="text-dim transition hover:text-fg">
+            real nvim
           </Link>
           <Link
             href="/cheatsheet"

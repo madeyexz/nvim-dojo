@@ -9,8 +9,11 @@ export default function CheatsheetPage() {
       <h1 className="mb-2 font-mono text-2xl font-bold text-fg">cheatsheet</h1>
       <p className="mb-8 max-w-2xl text-sm text-dim">
         Every key taught in the dojo, plus a few that are worth knowing once
-        the basics are reflex. Print it, or better — don&apos;t, and let the
-        drills do the remembering.
+        the basics are reflex. All of it works identically in Neovim — see the{" "}
+        <a href="/nvim" className="text-green underline-offset-4 hover:underline">
+          real nvim guide
+        </a>{" "}
+        for the LSP-powered keys (gd, K, grr, grn) that come next.
       </p>
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {modules.map((m) => (
